@@ -6,11 +6,19 @@
              mc:Ignorable="d"
              x:Class="ShopSolution.UIForms.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout Padding="10">
+        <Label Text="Hello Bladimir"
+               HorizontalOptions="Center"
+               FontSize="30"/>
+        <Label Text="Username"
+               FontSize="25"
+               TextColor="#1B8E2D"/>
+        <Entry Placeholder="Insert your Username" />
+        <Label Text="Password"
+               FontSize="25"
+               TextColor="#1B8E2D"/>
+        <Entry Placeholder="Insert your Password" />
+        <Button Text="LOGIN" />
     </StackLayout>
 
 </ContentPage>

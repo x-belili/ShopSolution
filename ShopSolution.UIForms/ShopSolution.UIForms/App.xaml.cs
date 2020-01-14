@@ -10,7 +10,9 @@ namespace ShopSolution.UIForms
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            var navigation = new NavigationPage(new MainPage());
+
+            MainPage = navigation;
         }
 
         protected override void OnStart()

@@ -28,6 +28,8 @@ namespace ShopSolution.Web
             services.AddDbContext<DataContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
+            services.AddTransient<SeedDb>();
+
             services.AddControllersWithViews();
         }
 

@@ -30,6 +30,8 @@ namespace ShopSolution.Web
 
             services.AddTransient<SeedDb>();
 
+            services.AddScoped<IRepository, Repository>();
+
             services.AddControllersWithViews();
         }
 
